@@ -23,13 +23,10 @@ import java.io.ByteArrayOutputStream;
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
-    String mTitle[] = {"Hygor José Silva", "Robson Arantes", "Carlos Freire", "Marília Moura", "Heloísa Alves"};
+    String mTitle[] = {"Carlos Freire", "Heloísa Alves", "Marília Moura", "Robson Arantes", "Hygor José Silva"};
     String mDescription[] = {"Hidratante", "Shampo", "Hidrante Shampo Repelente", "Hidrante Repelente" , "Sabonete Repelente"};
 
-    int image[] = {R.drawable.homem1, R.drawable.homem2, R.drawable.homem3, R.drawable.mulher1, R.drawable.mulher2};
-
-
-   
+    int image[] = {R.drawable.carlos, R.drawable.heloisa, R.drawable.marilia, R.drawable.robson, R.drawable.hygor};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 ByteArrayOutputStream bStream = new ByteArrayOutputStream();
 
                 Bitmap bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(),image[position]);
-                bitmap.compress(Bitmap.CompressFormat.JPEG,100,bStream);
+                bitmap.compress(Bitmap.CompressFormat.JPEG,10,bStream);
                 byte[] byteArray = bStream.toByteArray();
 
                 Intent myIntent = new Intent(getBaseContext()

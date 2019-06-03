@@ -3,20 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/greenlight">
+    android:background="@color/greendark">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="450dp"
         >
         <LinearLayout
+            android:background="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:orientation="vertical">
             <ImageView
                 android:layout_marginTop="35dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
                 android:id="@+id/image"/>
             <TextView
                 android:layout_marginTop="10dp"
@@ -57,7 +58,6 @@
                         android:text="1.5KM"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="@color/greenlight"
                     />
                 </LinearLayout>
                 <LinearLayout
@@ -79,7 +79,6 @@
                         android:text="4,9"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="@color/greenlight"
                         />
                 </LinearLayout>
 
@@ -121,12 +120,17 @@
             android:layout_height="wrap_content"
             android:text="FALE COMIGO"
             android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="COMPRE AGORA"
             android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+
+
             />
     </LinearLayout>
 

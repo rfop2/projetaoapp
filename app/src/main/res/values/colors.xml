@@ -5,5 +5,7 @@
     <color name="greenlight">#9BDFAD</color>
     <color name="startgreen">#09DF57</color>
     <color name="endgreen">#0CE646</color>
-    <color name="colorAccent">#EFF6F1</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="greendark">#3A5740</color>
+
 </resources>
